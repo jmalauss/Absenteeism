@@ -33,5 +33,12 @@ BusinessUnit
 Communication protocols:
 - slack group for 24/7 communication
 - using class time to delegate work and share barriers/help each other work through issues
-- 
+
+1. clean the data through EDA with pandas
+2. cleaned data to pgadmin or mongodb
+3. join/combine tables in pgadmin/mongodb
+4. export back to notebook - what story do we want to tell?
+5. develop unsupervised ML model in the notebook
+6. develop visualizations - they can be in the notebook or JS/tableau
+
 
