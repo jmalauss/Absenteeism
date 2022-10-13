@@ -35,10 +35,17 @@ Communication protocols:
 - using class time to delegate work and share barriers/help each other work through issues
 
 1. clean the data through EDA with pandas
-2. cleaned data to pgadmin or mongodb
-3. join/combine tables in pgadmin/mongodb
+2. cleaned data to pgadmin
+3. join/combine tables in pgadmin
 4. export back to notebook - what story do we want to tell?
 5. develop unsupervised ML model in the notebook
 6. develop visualizations - they can be in the notebook or JS/tableau
+
+Branches:
+- ETL branch
+- database branch: pgadmin files; .sql files; module 7 for reference
+- machine learning model branch
+- visualization branch
+
 
 
