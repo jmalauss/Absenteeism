@@ -19,20 +19,19 @@ After looking through the available datasets on the AIHR site, we chose to use t
 Generally, we would like to understand factors that influence absenteeism. We began by splitting our raw data into two tables: One table contains people data (EX: Tenure), while the other table contains job data (EX: department). This transformation of our raw data will allow us to categorize our findings in a way that is intuitive given what we understand about the workplace. In other words, is there a relationship between gender and absenteeism? Or, is absenteeism related to the department an individual works in? Are some departments more demanding than others? These are some of the questions we will ask of our dataset.
 
 ## Columns
-Data includes
-Employee number
-Surname
-GivenName
-Gender
-City
-JobTitle
-DepartmentName
-StoreLocation
-Division
-Age
-LengthService
-AbsentHours
-BusinessUnit
+- Employee number
+- Surname
+- GivenName
+- Gender
+- City
+- JobTitle
+- DepartmentName
+- StoreLocation
+- Division
+- Age
+- LengthService
+- AbsentHours
+- BusinessUnit
 
 ## Communication protocols:
 - slack group for 24/7 communication
