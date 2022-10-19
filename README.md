@@ -20,22 +20,7 @@ After looking through the available datasets on the AIHR site, we chose to use t
 ## What are we looking for?
 Generally, we would like to understand factors that influence absenteeism. We began by splitting our raw data into two tables: One table contains people data (EX: Tenure), while the other table contains job data (EX: department). This transformation of our raw data will allow us to categorize our findings in a way that is intuitive given what we understand about the workplace. In other words, is there a relationship between gender and absenteeism? Or, is absenteeism related to the department an individual works in? Are some departments more demanding than others? These are some of the questions we will ask of our dataset.
 
-✓ Questions they hope to answer with 
-the data
-Note: The content does not yet need to 
-be in the form of a presentation; text in 
-the README.md works as well. 
-
-
-
-✓ Reason why they selected their topic - Shared group interests
-✓ Description of their source of data 
-
--fictitious absenteeism data to explore with People Analytics
-- Absenteeism- is a major expense to most organizations. Getting a handle on it, predicting it and affecting it is important for organizations. This dataset provided for HR data scientists to practice on
-
-Columns:
-
+## Columns
 Data includes
 Employee number
 Surname
@@ -51,12 +36,11 @@ LengthService
 AbsentHours
 BusinessUnit
 
-✓ Questions we hope to answer: What trends exist across age groups?
-
-Communication protocols:
+## Communication protocols:
 - slack group for 24/7 communication
 - using class time to delegate work and share barriers/help each other work through issues
 
+## Approach
 1. clean the data through EDA with pandas
 2. cleaned data to pgadmin
 3. join/combine tables in pgadmin
@@ -64,7 +48,7 @@ Communication protocols:
 5. develop unsupervised ML model in the notebook
 6. develop visualizations - they can be in the notebook or JS/tableau
 
-Branches:
+## Branches:
 - ETL branch
 - database branch: pgadmin files; .sql files; module 7 for reference
 - machine learning model branch
