@@ -1,6 +1,4 @@
-# Absenteeism
-
-## Topic
+## Topic: Absenteeism
 Attendance (Absenteeism): 
 - What factors influence Absenteeism? 
 - What trends exist within attendance?
