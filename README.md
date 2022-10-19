@@ -1,9 +1,32 @@
 # Absenteeism
-Final group project - Attendance data analysis
 
 ## Topic
+Attendance (Absenteeism): 
+- What factors influence Absenteeism? 
+- What trends exist within attendance?
 
-Attendance (Absenteeism): What factors influence Absenteeism? What trends exist within attendance?
+## Why Absenteeism?
+Our group gravitated towards this because we all wanted to focus on employment data. The idea of exploring relationships within data related to the workplace was relevant for all of us! Absenteeism seemed like a great place to begin because there are many factors that contribute to an individual's attendance at work.
+
+## Where did we get our data?
+Our data came from: 
+https://www.kaggle.com/datasets/HRAnalyticRepository/absenteeism-dataset
+
+We found our inspiration for this dataset from this source:
+https://www.aihr.com/blog/hr-data-sets-people-analytics/
+
+After looking through the available datasets on the AIHR site, we chose to use the dataset we did because there were two available datasets for absenteeism. The one we didn't use only had 740 rows and 21 columns. Our current dataset has 8335 rows and 13 columns. We made this decision because we wanted more raw data to work with, to increase the amount of analyses we could potentially perform.
+
+## What are we looking for?
+Generally, we would like to understand factors that influence absenteeism. We began by splitting our raw data into two tables: One table contains people data (EX: Tenure), while the other table contains job data (EX: department). This transformation of our raw data will allow us to categorize our findings in a way that is intuitive given what we understand about the workplace. In other words, is there a relationship between gender and absenteeism? Or, is absenteeism related to the department an individual works in? Are some departments more demanding than others? These are some of the questions we will ask of our dataset.
+
+✓ Questions they hope to answer with 
+the data
+Note: The content does not yet need to 
+be in the form of a presentation; text in 
+the README.md works as well. 
+
+
 
 ✓ Reason why they selected their topic - Shared group interests
 ✓ Description of their source of data 
