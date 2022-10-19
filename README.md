@@ -40,7 +40,7 @@ BusinessUnit
 - slack group for 24/7 communication
 - using class time to delegate work and share barriers/help each other work through issues
 
-## Approach
+## Group Approach
 1. clean the data through EDA with pandas
 2. cleaned data to pgadmin
 3. join/combine tables in pgadmin
