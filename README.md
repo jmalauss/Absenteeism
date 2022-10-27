@@ -21,6 +21,7 @@ After looking through the available datasets on the AIHR site, we chose to use t
 ## What are we looking for?
 - Is there a difference in absent hours between males and females? - Justin
 - Is there a difference in absent hours based on age? - Samantha
+  - Using a linear regression we looked at the relationship between age and absent hours
 - Is there a difference in absent hours based on tenure? - Bradley
 - Is there a difference in absent hours based on job title? - Frederick
 
@@ -49,7 +50,7 @@ After looking through the available datasets on the AIHR site, we chose to use t
 2. cleaned data to pgadmin
 3. join/combine tables in pgadmin
 4. export back to notebook - what story do we want to tell?
-5. develop unsupervised ML model in the notebook
+5. develop unsupervised/supervised ML model in the notebook
 6. develop visualizations - they can be in the notebook or JS/tableau
 
 ## Branches:
