@@ -20,7 +20,7 @@ After looking through the available datasets on the AIHR site, we chose to use t
 
 ## What are we looking for?
 - Is there a difference in absent hours between males and females? - Justin
-- Is there a difference in absent hours based on the department you work in? - Samantha
+- Is there a difference in absent hours based on age? - Samantha
 - Is there a difference in absent hours based on tenure? - Bradley
 - Is there a difference in absent hours based on job title? - Frederick
 
