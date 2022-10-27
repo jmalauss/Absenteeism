@@ -64,6 +64,3 @@ This model was chosen to explore the relationship between a continuous input dat
 - database branch: pgadmin files; .sql files; module 7 for reference
 - machine learning model branch
 - visualization branch
-
-
-
