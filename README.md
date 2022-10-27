@@ -20,9 +20,16 @@ After looking through the available datasets on the AIHR site, we chose to use t
 
 ## What are we looking for?
 - Is there a difference in absent hours between males and females? - Justin
-- Is there a difference in absent hours based on the department you work in? - Samantha
+- Is there a difference in absent hours based on age? - Samantha
+  - Using a linear regression we looked at the relationship between age and absent hours
 - Is there a difference in absent hours based on tenure? - Bradley
 - Is there a difference in absent hours based on job title? - Frederick
+
+## Machine Learning Models
+
+### Linear Regression
+
+This model was chosen to explore the relationship between a continuous input data column and a continuous target data column. The linear regression model would then attempt to fit itself to the data and predict the line of best fit for the data, therey illustrating the relationship between the two variables. This allows us to clearly illustrate the strength of the relationship, if any, between the variables. Unfortunately, the regression is limited to straight lines, and as such fails to capture more complex relationships between variables that could be found using a polynomial regression, for example.
 
 
 ## Columns
@@ -49,7 +56,7 @@ After looking through the available datasets on the AIHR site, we chose to use t
 2. cleaned data to pgadmin
 3. join/combine tables in pgadmin
 4. export back to notebook - what story do we want to tell?
-5. develop unsupervised ML model in the notebook
+5. develop unsupervised/supervised ML model in the notebook
 6. develop visualizations - they can be in the notebook or JS/tableau
 
 ## Branches:
