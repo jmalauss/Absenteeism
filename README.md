@@ -25,6 +25,12 @@ After looking through the available datasets on the AIHR site, we chose to use t
 - Is there a difference in absent hours based on tenure? - Bradley
 - Is there a difference in absent hours based on job title? - Frederick
 
+## Machine Learning Models
+
+### Linear Regression
+
+This model was chosen to explore the relationship between a continuous input data column and a continuous target data column. The linear regression model would then attempt to fit itself to the data and predict the line of best fit for the data, therey illustrating the relationship between the two variables. This allows us to clearly illustrate the strength of the relationship, if any, between the variables. Unfortunately, the regression is limited to straight lines, and as such fails to capture more complex relationships between variables that could be found using a polynomial regression, for example.
+
 
 ## Columns
 - Employee number
