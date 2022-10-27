@@ -64,3 +64,12 @@ This model was chosen to explore the relationship between a continuous input dat
 - database branch: pgadmin files; .sql files; module 7 for reference
 - machine learning model branch
 - visualization branch
+
+## ML Models:
+- K-Means Clustering Algorithm used to find trends amongst the following factors:
+    - Age
+    - Gender
+    - LengthService (Tenure in Years)
+    - AbsentHours (Worked hours missed)
+- As we added clusters and performed the elbow curve test, we noticed that reducing a dimension would be beneficial to the model and its use.
+- 2 Clusters were ideal for this analysis, but was also performed with 3 and visualized with a 2 and 3D scatter.
