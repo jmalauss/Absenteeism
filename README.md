@@ -65,6 +65,13 @@ This model was chosen to explore the relationship between a continuous input dat
 - machine learning model branch
 - visualization branch
 
+## Preliminary Data Preprocessing
+- After reading in the csv, we needed to round the Age column to a whole number
+- we also needed to drop some columns: `absenteeism_df.drop(["Surname", "GivenName", "BusinessUnit"], axis=1)`
+- Then we rounded LengthService and AbsentHours to 2 decimal places
+- Given the columns and the type of information we have about each employee, we decided to split our dataframe into two separate tables. The primary key relating these tables is the employee ID. We have one DF for People, and one for Location. People DF shares info about the individual's characteristics while Location DF shares info about WHERE they work. Both of these DFs contain the column AbsentHours, the variable we are looking to understand.
+
+
 ## ML Models:
 - K-Means Clustering Algorithm used to find trends amongst the following factors:
     - Age
