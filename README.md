@@ -1,3 +1,16 @@
+## Absenteeism - Project Outline
+- Team
+- Why Absenteeism?
+- Questions about Absenteeism
+- Factors: Age, Gender, Tenure, Department & Job Title
+- Datasource
+- ERD - Entity Relationship Diagram
+- Data Cleaning
+- Database
+- Machine Learning
+- Data Visualization
+- Lessons Learned
+
 ## Topic: Absenteeism
 Attendance (Absenteeism): 
 - What factors influence Absenteeism? 
