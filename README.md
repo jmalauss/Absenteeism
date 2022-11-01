@@ -2,7 +2,7 @@
 - Team
 - Why Absenteeism?
 - Questions about Absenteeism
-- Factors: Age, Gender, Tenure, Department & Job Title
+- Factors
 - Datasource
 - ERD - Entity Relationship Diagram
 - Data Cleaning
@@ -11,16 +11,39 @@
 - Data Visualization
 - Lessons Learned
 
-## Topic: Absenteeism
-Attendance (Absenteeism): 
+## Team
+- Bradley
+- Frederick
+- Justin
+- Samantha
+
+# Why Absenteeism?
+Our group gravitated towards this because we all wanted to focus on employment data. The idea of exploring relationships within data related to the workplace was relevant for all of us! Absenteeism seemed like a great place to begin because there are many factors that contribute to an individual's attendance at work.
 - What factors influence Absenteeism? 
 - What trends exist within attendance?
 
-## Presentation Link
+## Questions about Absenteeism
+
+## Factors
+- Age
+- Gender
+- Tenure
+- Department
+- Job Title
+- Store Location
+
+## ERD - Entity Relationship Diagram
+## Data Cleaning
+## Database
+## Machine Learning
+## Data Visualization
+## Lessons Learned
+## Links
+- Presentation Link
 https://docs.google.com/presentation/d/1FpSnqludv_uRUOL-mWzRSvVawIkKticF0kY8_Bl397w/edit#slide=id.p
 
 ## Why Absenteeism?
-Our group gravitated towards this because we all wanted to focus on employment data. The idea of exploring relationships within data related to the workplace was relevant for all of us! Absenteeism seemed like a great place to begin because there are many factors that contribute to an individual's attendance at work.
+
 
 ## Where did we get our data?
 Our data came from: 
