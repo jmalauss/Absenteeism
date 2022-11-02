@@ -33,6 +33,13 @@ Our group gravitated towards this because we all wanted to focus on employment d
 - Gender
 
 - Tenure
+  - After performing a linear regression model on Employee Age versus Tenure (left model) and then again after scaling the data with StandardScaler.fit_transform() (right model), the following models were generated
+
+<img src="https://github.com/jmalauss/Absenteeism/blob/machine_learning/Resources/Images/LRTenure1.png"> <img src="https://github.com/jmalauss/Absenteeism/blob/machine_learning/Resources/Images/LRTenure2.png" width="420">
+
+  - The linear regression models generated after analyzing Employee Age versus Short-Term Tenure (left model) and with Long-Term Tenure (right model)
+  
+  <img src="https://github.com/jmalauss/Absenteeism/blob/machine_learning/Resources/Images/LRShortTenure.png" width="410"> <img src="https://github.com/jmalauss/Absenteeism/blob/machine_learning/Resources/Images/LRLongTenure.png" width="427">
 
 - Department
   - Looking at a bar graph to show relationship between absent hours
@@ -63,8 +70,8 @@ Absentism and data about people
  ![alt text](https://raw.githubusercontent.com/jmalauss/Absenteeism/visualization/location%20table.png)
  Absentism and coordinates of cities
  ![alt text](https://raw.githubusercontent.com/jmalauss/Absenteeism/visualization/coordinates%20table.png)
- You can find all tables here
- https://github.com/jmalauss/Absenteeism/blob/Database-files/Group%20Project%20Absenteeism.sql
+ You can find all tables here: [Group Project Absenteeism.sql](https://github.com/jmalauss/Absenteeism/blob/Database-files/Group%20Project%20Absenteeism.sql "Group Project Absenteeism.sql")
+
 ## Machine Learning
 ## Data Visualization
 ## Lessons Learned
