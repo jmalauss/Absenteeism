@@ -1,8 +1,8 @@
 ## Absenteeism - Project Outline
 - [Team](https://github.com/jmalauss/Absenteeism#team "Team")
-- [Why Absenteeism?](https://github.com/jmalauss/Absenteeism#why "Why Absenteeism?")
-- Questions about Absenteeism
-- Factors
+- [Why Absenteeism?](https://github.com/jmalauss/Absenteeism#why-absenteeism "Why Absenteeism?")
+- [Questions about Absenteeism](https://github.com/jmalauss/Absenteeism#questions-about-absenteeism "Questions About Absenteeism")
+- [Factors](https://github.com/jmalauss/Absenteeism#factors "Factors")
 - Datasource
 - ERD - Entity Relationship Diagram
 - Data Cleaning
