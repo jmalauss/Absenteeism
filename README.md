@@ -1,4 +1,5 @@
 ## Absenteeism - Project Outline
+
 - [Team](https://github.com/jmalauss/Absenteeism#team "Team")
 - [Why Absenteeism?](https://github.com/jmalauss/Absenteeism#why-absenteeism "Why Absenteeism?")
 - [Questions about Absenteeism](https://github.com/jmalauss/Absenteeism#questions-about-absenteeism "Questions About Absenteeism")
@@ -70,12 +71,14 @@ Absentism and data about people
  ![alt text](https://raw.githubusercontent.com/jmalauss/Absenteeism/visualization/location%20table.png)
  Absentism and coordinates of cities
  ![alt text](https://raw.githubusercontent.com/jmalauss/Absenteeism/visualization/coordinates%20table.png)
+
  You can find all tables here: [Group Project Absenteeism.sql](https://github.com/jmalauss/Absenteeism/blob/Database-files/Group%20Project%20Absenteeism.sql "Group Project Absenteeism.sql")
 
 ## Machine Learning
 ## Data Visualization
 ## Lessons Learned
 ## Links
+
 - Presentation Link:
 [Google Slides Presentation](https://docs.google.com/presentation/d/1FpSnqludv_uRUOL-mWzRSvVawIkKticF0kY8_Bl397w/edit#slide=id.p "Google Slides Presentation")
 
@@ -87,6 +90,7 @@ Our data came from:
 [Kaggle Absenteeism Dataset](https://www.kaggle.com/datasets/HRAnalyticRepository/absenteeism-dataset "Kaggle Absenteeism Dataset")
 
 We found our inspiration for this dataset from this source:
+
 [HR Data Sets](https://www.aihr.com/blog/hr-data-sets-people-analytics/ "HR Data Sets")
 
 ## What are we looking for?
