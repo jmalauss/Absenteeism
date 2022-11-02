@@ -23,9 +23,11 @@ Our group gravitated towards this because we all wanted to focus on employment d
 - What trends exist within attendance?
 
 ## Questions about Absenteeism
-
+- The question we would like to explore is whether age, gender, tenure, department, job title, or store locaation have any significant relationship with absent hours.
 ## Factors
 - Age
+  We did a linear regression model to see if there is a correlation with age and got this 
+  https://raw.githubusercontent.com/<jmalauss>/<Absenteeism>/<machine_learning>/<Fig4.png>
 - Gender
 - Tenure
 - Department
