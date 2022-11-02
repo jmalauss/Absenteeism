@@ -27,7 +27,7 @@ Our group gravitated towards this because we all wanted to focus on employment d
 ## Factors
 - Age
   We did a linear regression model to see if there is a correlation with age and got this 
-  https://github.com/jmalauss/Absenteeism/blob/machine_learning/Fig4.png
+  [https://github.com/jmalauss/Absenteeism/blob/machine_learning/Fig4.png](https://raw.githubusercontent.com/jmalauss/Absenteeism/machine_learning/Fig4.png)
 - Gender
 - Tenure
 - Department
