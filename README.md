@@ -1,6 +1,6 @@
 ## Absenteeism - Project Outline
 - [Team](https://github.com/jmalauss/Absenteeism#team "Team")
-- Why Absenteeism?
+- [Why Absenteeism?](https://github.com/jmalauss/Absenteeism#why "Why Absenteeism?")
 - Questions about Absenteeism
 - Factors
 - Datasource
@@ -78,7 +78,7 @@ Absentism and data about people
 
 ## Where did we get our data?
 Our data came from: 
-[Kaggle Absenteeism Dataset](https://www.kaggle.com/datasets/HRAnalyticRepository/absenteeism-dataset "Kaggle Absenteeism Dataset)
+[Kaggle Absenteeism Dataset](https://www.kaggle.com/datasets/HRAnalyticRepository/absenteeism-dataset "Kaggle Absenteeism Dataset")
 
 We found our inspiration for this dataset from this source:
 [HR Data Sets](https://www.aihr.com/blog/hr-data-sets-people-analytics/ "HR Data Sets")
