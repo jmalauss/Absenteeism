@@ -83,10 +83,6 @@ This model was chosen to explore the relationship between a continuous input dat
 - AbsentHours
 - BusinessUnit
 
-## Communication protocols:
-- slack group for 24/7 communication
-- using class time to delegate work and share barriers/help each other work through issues
-
 ## Group Approach
 1. clean the data through EDA with pandas
 2. cleaned data to pgadmin
