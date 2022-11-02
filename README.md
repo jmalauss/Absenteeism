@@ -41,6 +41,11 @@ Our group gravitated towards this because we all wanted to focus on employment d
 This data comes from https://www.kaggle.com/datasets/HRAnalyticRepository/absenteeism-dataset.  This is fictious data with hr information about absent hours.  Our current data source has 8335 rows and 13 columns. Within the 13 columns, there are Employee number, Surname, GivenName, Gender, City, JobTitle, DepartmentName, StoreLocation, Division, Age, LengthService, AbsentHours, and BusinessUnit.
 
 ## ERD - Entity Relationship Diagram
+
+Below is an ERD depicting our tables and the relationships between them
+
+<img src="https://github.com/jmalauss/Absenteeism/blob/Database-files/Resources/Images/Absenteeism_ERD.png">
+
 ## Data Cleaning
 ## Database
 In our analysis there were multiple tables created to help us with visualizations:
