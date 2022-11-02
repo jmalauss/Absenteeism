@@ -3,13 +3,13 @@
 - [Why Absenteeism?](https://github.com/jmalauss/Absenteeism#why-absenteeism "Why Absenteeism?")
 - [Questions about Absenteeism](https://github.com/jmalauss/Absenteeism#questions-about-absenteeism "Questions About Absenteeism")
 - [Factors](https://github.com/jmalauss/Absenteeism#factors "Factors")
-- Datasource
-- ERD - Entity Relationship Diagram
-- Data Cleaning
-- Database
-- Machine Learning
-- Data Visualization
-- Lessons Learned
+- [Datasource](https://github.com/jmalauss/Absenteeism#datasource "Datasource") 
+- [ERD - Entity Relationship Diagram](https://github.com/jmalauss/Absenteeism#erd---entity-relationship-diagram "ERD")
+- [Data Cleaning](https://github.com/jmalauss/Absenteeism#data-cleaning "Data Cleaning")
+- [Database](https://github.com/jmalauss/Absenteeism#database "Database")
+- [Machine Learning](https://github.com/jmalauss/Absenteeism#machine-learning "Machine Learning")
+- [Data Visualization](https://github.com/jmalauss/Absenteeism#data-visualization "Data Visualization")
+- [Lessons Learned](https://github.com/jmalauss/Absenteeism#lessons-learned "Lessons Learned")
 
 ## Team
 - Bradley
@@ -70,7 +70,6 @@ Absentism and data about people
 ## Lessons Learned
 ## Links
 - Presentation Link:
-
 [Google Slides Presentation](https://docs.google.com/presentation/d/1FpSnqludv_uRUOL-mWzRSvVawIkKticF0kY8_Bl397w/edit#slide=id.p "Google Slides Presentation")
 
 ## Why Absenteeism?
@@ -82,8 +81,6 @@ Our data came from:
 
 We found our inspiration for this dataset from this source:
 [HR Data Sets](https://www.aihr.com/blog/hr-data-sets-people-analytics/ "HR Data Sets")
-
-
 
 ## What are we looking for?
 - Is there a difference in absent hours between males and females? - Justin
