@@ -31,12 +31,27 @@ Our group gravitated towards this because we all wanted to focus on employment d
 - Gender
 - Tenure
 - Department
+  Looking at a bar graph to show relationship between absent hours
+  ![alt text](https://raw.githubusercontent.com/jmalauss/Absenteeism/visualization/Average%20Absent%20Hours%20Per%20Department.png)
 - Job Title
+  This is a bar graph showing the relationship between job titles and absent hours
+  ![alt text](https://raw.githubusercontent.com/jmalauss/Absenteeism/visualization/Average%20Absent%20Hours%20Per%20Job%20Title.png)
 - Store Location
+## Data Source
+This data comes from https://www.kaggle.com/datasets/HRAnalyticRepository/absenteeism-dataset.  This fictious data with hr information about absent hours.  Our current data source has 8335 rows and 13 columns. Within the 13 columns, there are Employee number, Surname, GivenName, Gender, City, JobTitle, DepartmentName, StoreLocation, Division, Age, LengthService, AbsentHours, and BusinessUnit.
 
 ## ERD - Entity Relationship Diagram
 ## Data Cleaning
 ## Database
+In our analysis there were multiple tables created to help us with visualizations:
+Absentism and data about people
+ ![alt text](https://raw.githubusercontent.com/jmalauss/Absenteeism/visualization/people.png)
+ Absentism and data about Location
+ ![alt text](https://raw.githubusercontent.com/jmalauss/Absenteeism/visualization/location%20table.png)
+ Absentism and coordinates of cities
+ ![alt text](https://raw.githubusercontent.com/jmalauss/Absenteeism/visualization/coordinates%20table.png)
+ You can find all tables here
+ https://github.com/jmalauss/Absenteeism/blob/Database-files/Group%20Project%20Absenteeism.sql
 ## Machine Learning
 ## Data Visualization
 ## Lessons Learned
@@ -54,7 +69,7 @@ https://www.kaggle.com/datasets/HRAnalyticRepository/absenteeism-dataset
 We found our inspiration for this dataset from this source:
 https://www.aihr.com/blog/hr-data-sets-people-analytics/
 
-After looking through the available datasets on the AIHR site, we chose to use the dataset we did because there were two available datasets for absenteeism. The one we didn't use only had 740 rows and 21 columns. Our current dataset has 8335 rows and 13 columns. We made this decision because we wanted more raw data to work with, to increase the amount of analyses we could potentially perform.
+
 
 ## What are we looking for?
 - Is there a difference in absent hours between males and females? - Justin
@@ -70,20 +85,6 @@ After looking through the available datasets on the AIHR site, we chose to use t
 This model was chosen to explore the relationship between a continuous input data column and a continuous target data column. The linear regression model would then attempt to fit itself to the data and predict the line of best fit for the data, therey illustrating the relationship between the two variables. This allows us to clearly illustrate the strength of the relationship, if any, between the variables. Unfortunately, the regression is limited to straight lines, and as such fails to capture more complex relationships between variables that could be found using a polynomial regression, for example.
 
 
-## Columns
-- Employee number
-- Surname
-- GivenName
-- Gender
-- City
-- JobTitle
-- DepartmentName
-- StoreLocation
-- Division
-- Age
-- LengthService
-- AbsentHours
-- BusinessUnit
 
 ## Group Approach
 1. clean the data through EDA with pandas
