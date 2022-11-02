@@ -1,15 +1,16 @@
 ## Absenteeism - Project Outline
-- Team
-- Why Absenteeism?
-- Questions about Absenteeism
-- Factors
-- Datasource
-- ERD - Entity Relationship Diagram
-- Data Cleaning
-- Database
-- Machine Learning
-- Data Visualization
-- Lessons Learned
+
+- [Team](https://github.com/jmalauss/Absenteeism#team "Team")
+- [Why Absenteeism?](https://github.com/jmalauss/Absenteeism#why-absenteeism "Why Absenteeism?")
+- [Questions about Absenteeism](https://github.com/jmalauss/Absenteeism#questions-about-absenteeism "Questions About Absenteeism")
+- [Factors](https://github.com/jmalauss/Absenteeism#factors "Factors")
+- [Datasource](https://github.com/jmalauss/Absenteeism#datasource "Datasource") 
+- [ERD - Entity Relationship Diagram](https://github.com/jmalauss/Absenteeism#erd---entity-relationship-diagram "ERD")
+- [Data Cleaning](https://github.com/jmalauss/Absenteeism#data-cleaning "Data Cleaning")
+- [Database](https://github.com/jmalauss/Absenteeism#database "Database")
+- [Machine Learning](https://github.com/jmalauss/Absenteeism#machine-learning "Machine Learning")
+- [Data Visualization](https://github.com/jmalauss/Absenteeism#data-visualization "Data Visualization")
+- [Lessons Learned](https://github.com/jmalauss/Absenteeism#lessons-learned "Lessons Learned")
 
 ## Team
 - Bradley
@@ -24,21 +25,36 @@ Our group gravitated towards this because we all wanted to focus on employment d
 
 ## Questions about Absenteeism
 - The question we would like to explore is whether age, gender, tenure, department, job title, or store locaation have any significant relationship with absent hours.
+
 ## Factors
 - Age
-  We did a linear regression model to see if there is a correlation with age and got this 
+  - We did a linear regression model to see if there is a correlation with age and got this 
 ![alt text](https://raw.githubusercontent.com/jmalauss/Absenteeism/machine_learning/Fig4.png)
+
 - Gender
+
 - Tenure
+  - After performing a linear regression model on Employee Age versus Tenure (left model) and then again after scaling the data with StandardScaler.fit_transform() (right model), the following models were generated
+
+<img src="https://github.com/jmalauss/Absenteeism/blob/machine_learning/Resources/Images/LRTenure1.png"> <img src="https://github.com/jmalauss/Absenteeism/blob/machine_learning/Resources/Images/LRTenure2.png" width="420">
+
+  - The linear regression models generated after analyzing Employee Age versus Short-Term Tenure (left model) and with Long-Term Tenure (right model)
+  
+  <img src="https://github.com/jmalauss/Absenteeism/blob/machine_learning/Resources/Images/LRShortTenure.png" width="410"> <img src="https://github.com/jmalauss/Absenteeism/blob/machine_learning/Resources/Images/LRLongTenure.png" width="427">
+
 - Department
-  Looking at a bar graph to show relationship between absent hours
+  - Looking at a bar graph to show relationship between absent hours
   ![alt text](https://raw.githubusercontent.com/jmalauss/Absenteeism/visualization/Average%20Absent%20Hours%20Per%20Department.png)
+
 - Job Title
-  This is a bar graph showing the relationship between job titles and absent hours
+  - This is a bar graph showing the relationship between job titles and absent hours
   ![alt text](https://raw.githubusercontent.com/jmalauss/Absenteeism/visualization/Average%20Absent%20Hours%20Per%20Job%20Title.png)
+
 - Store Location
+
 ## Data Source
-This data comes from https://www.kaggle.com/datasets/HRAnalyticRepository/absenteeism-dataset.  This is fictious data with hr information about absent hours.  Our current data source has 8335 rows and 13 columns. Within the 13 columns, there are Employee number, Surname, GivenName, Gender, City, JobTitle, DepartmentName, StoreLocation, Division, Age, LengthService, AbsentHours, and BusinessUnit.
+
+This data comes from [this Kaggle dataset](https://www.kaggle.com/datasets/HRAnalyticRepository/absenteeism-dataset "Absenteeism").  This is fictious data with hr information about absent hours.  Our current data source has 8335 rows and 13 columns. Within the 13 columns, there are Employee number, Surname, GivenName, Gender, City, JobTitle, DepartmentName, StoreLocation, Division, Age, LengthService, AbsentHours, and BusinessUnit.
 
 ## ERD - Entity Relationship Diagram
 
@@ -55,26 +71,27 @@ Absentism and data about people
  ![alt text](https://raw.githubusercontent.com/jmalauss/Absenteeism/visualization/location%20table.png)
  Absentism and coordinates of cities
  ![alt text](https://raw.githubusercontent.com/jmalauss/Absenteeism/visualization/coordinates%20table.png)
- You can find all tables here
- https://github.com/jmalauss/Absenteeism/blob/Database-files/Group%20Project%20Absenteeism.sql
+
+ You can find all tables here: [Group Project Absenteeism.sql](https://github.com/jmalauss/Absenteeism/blob/Database-files/Group%20Project%20Absenteeism.sql "Group Project Absenteeism.sql")
+
 ## Machine Learning
 ## Data Visualization
 ## Lessons Learned
 ## Links
-- Presentation Link
-https://docs.google.com/presentation/d/1FpSnqludv_uRUOL-mWzRSvVawIkKticF0kY8_Bl397w/edit#slide=id.p
+
+- Presentation Link:
+[Google Slides Presentation](https://docs.google.com/presentation/d/1FpSnqludv_uRUOL-mWzRSvVawIkKticF0kY8_Bl397w/edit#slide=id.p "Google Slides Presentation")
 
 ## Why Absenteeism?
 
 
 ## Where did we get our data?
 Our data came from: 
-https://www.kaggle.com/datasets/HRAnalyticRepository/absenteeism-dataset
+[Kaggle Absenteeism Dataset](https://www.kaggle.com/datasets/HRAnalyticRepository/absenteeism-dataset "Kaggle Absenteeism Dataset")
 
 We found our inspiration for this dataset from this source:
-https://www.aihr.com/blog/hr-data-sets-people-analytics/
 
-
+[HR Data Sets](https://www.aihr.com/blog/hr-data-sets-people-analytics/ "HR Data Sets")
 
 ## What are we looking for?
 - Is there a difference in absent hours between males and females? - Justin
