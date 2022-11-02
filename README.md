@@ -18,7 +18,7 @@
 - Justin
 - Samantha
 
-# Why Absenteeism?
+## Why Absenteeism?
 Our group gravitated towards this because we all wanted to focus on employment data. The idea of exploring relationships within data related to the workplace was relevant for all of us! Absenteeism seemed like a great place to begin because there are many factors that contribute to an individual's attendance at work.
 - What factors influence Absenteeism? 
 - What trends exist within attendance?
@@ -63,13 +63,27 @@ Below is an ERD depicting our tables and the relationships between them
 <img src="https://github.com/jmalauss/Absenteeism/blob/Database-files/Resources/Images/Absenteeism_ERD.png">
 
 ## Data Cleaning
+
+For the data cleaning, we used Jupyter Notebook and associated libraries to clean and reformat the data.
+First, we had dropped rows with null values, then we had round down the "Age" column values to better reflect how people self-report their age.
+The "AbsentHours" and "LengthService" were rounded two two decimal places to make the data cleaner and keep the significant figures of these columns the same given that they're both units of time (though LengthService is presumed to be years and AbsentHours is presumed to be in Hours).
+Any unneeded columns were dropped from the dataframe; namely the "Surname", "GivenName", "City", and "BusinessUnit" columns.
+
+Depending on the analysis and machine learning model, further cleaning was done.
+For example, in some models employees with a LengthService of 0 (meaning they just started) were dropped, or if an employee had no absent hours they may have been dropped.
+In some models, the EmployeeNumber was set as the Index to keep track of predictions or clusters.
+Other models also had encoded the Gender column in the cleaning stage, and some had binned job titles to allow for more accurate analyses.
+
 ## Database
 In our analysis there were multiple tables created to help us with visualizations:
+
 Absentism and data about people
  ![alt text](https://raw.githubusercontent.com/jmalauss/Absenteeism/visualization/people.png)
- Absentism and data about Location
+ 
+Absentism and data about Location
  ![alt text](https://raw.githubusercontent.com/jmalauss/Absenteeism/visualization/location%20table.png)
- Absentism and coordinates of cities
+ 
+Absentism and coordinates of cities
  ![alt text](https://raw.githubusercontent.com/jmalauss/Absenteeism/visualization/coordinates%20table.png)
 
  You can find all tables here: [Group Project Absenteeism.sql](https://github.com/jmalauss/Absenteeism/blob/Database-files/Group%20Project%20Absenteeism.sql "Group Project Absenteeism.sql")
@@ -81,6 +95,8 @@ Absentism and data about people
 
 - Presentation Link:
 [Google Slides Presentation](https://docs.google.com/presentation/d/1FpSnqludv_uRUOL-mWzRSvVawIkKticF0kY8_Bl397w/edit#slide=id.p "Google Slides Presentation")
+
+----------
 
 ## Why Absenteeism?
 
