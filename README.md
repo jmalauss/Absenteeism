@@ -65,7 +65,7 @@ Below is an ERD depicting our tables and the relationships between them
 ## Data Cleaning
 
 For the data cleaning, we used Jupyter Notebook and associated libraries to clean and reformat the data.
-First, we had dropped rows with null values, then we had round down the "Age" column values to better reflect how people self-report their age.
+After loading the CSV file, we had dropped rows with null values, then we had round down the "Age" column values to better reflect how people self-report their age.
 The "AbsentHours" and "LengthService" were rounded two two decimal places to make the data cleaner and keep the significant figures of these columns the same given that they're both units of time (though LengthService is presumed to be years and AbsentHours is presumed to be in Hours).
 Any unneeded columns were dropped from the dataframe; namely the "Surname", "GivenName", "City", and "BusinessUnit" columns.
 
@@ -96,17 +96,13 @@ Absentism and coordinates of cities
 - Presentation Link:
 [Google Slides Presentation](https://docs.google.com/presentation/d/1FpSnqludv_uRUOL-mWzRSvVawIkKticF0kY8_Bl397w/edit#slide=id.p "Google Slides Presentation")
 
-----------
+- Kaggle Data Set:
+[Kaggle Absenteeism Dataset](https://www.kaggle.com/datasets/HRAnalyticRepository/absenteeism-dataset "Kaggle Absenteeism Dataset") 
 
-## Why Absenteeism?
-
-
-## Where did we get our data?
-Our data came from: 
-[Kaggle Absenteeism Dataset](https://www.kaggle.com/datasets/HRAnalyticRepository/absenteeism-dataset "Kaggle Absenteeism Dataset")
-
-We found our inspiration for this dataset from this source:
+- Where We Found Our Dataset:
 [HR Data Sets](https://www.aihr.com/blog/hr-data-sets-people-analytics/ "HR Data Sets")
+
+----------
 
 ## What are we looking for?
 - Is there a difference in absent hours between males and females? - Justin
@@ -122,25 +118,8 @@ We found our inspiration for this dataset from this source:
 This model was chosen to explore the relationship between a continuous input data column and a continuous target data column. The linear regression model would then attempt to fit itself to the data and predict the line of best fit for the data, therey illustrating the relationship between the two variables. This allows us to clearly illustrate the strength of the relationship, if any, between the variables. Unfortunately, the regression is limited to straight lines, and as such fails to capture more complex relationships between variables that could be found using a polynomial regression, for example.
 
 
-
-## Group Approach
-1. clean the data through EDA with pandas
-2. cleaned data to pgadmin
-3. join/combine tables in pgadmin
-4. export back to notebook - what story do we want to tell?
-5. develop unsupervised/supervised ML model in the notebook
-6. develop visualizations - they can be in the notebook or JS/tableau
-
-## Branches:
-- ETL branch
-- database branch: pgadmin files; .sql files; module 7 for reference
-- machine learning model branch
-- visualization branch
-
 ## Preliminary Data Preprocessing
-- After reading in the csv, we needed to round the Age column to a whole number
 - we also needed to drop some columns: `absenteeism_df.drop(["Surname", "GivenName", "BusinessUnit"], axis=1)`
-- Then we rounded LengthService and AbsentHours to 2 decimal places
 - Given the columns and the type of information we have about each employee, we decided to split our dataframe into two separate tables. The primary key relating these tables is the employee ID. We have one DF for People, and one for Location. People DF shares info about the individual's characteristics while Location DF shares info about WHERE they work. Both of these DFs contain the column AbsentHours, the variable we are looking to understand.
 
 
