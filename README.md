@@ -40,7 +40,7 @@ Our group gravitated towards this because we all wanted to focus on employment d
 
   - The linear regression models generated after analyzing Employee Age versus Short-Term Tenure (left model) and with Long-Term Tenure (right model)
   
-  <img src="https://github.com/jmalauss/Absenteeism/blob/machine_learning/Resources/Images/LRShortTenure.png" width="410"> <img src="https://github.com/jmalauss/Absenteeism/blob/machine_learning/Resources/Images/LRLongTenure.png" width="427">
+  <img src="https://github.com/jmalauss/Absenteeism/blob/machine_learning/Resources/Images/LRShortTenure.png" width="415"> <img src="https://github.com/jmalauss/Absenteeism/blob/machine_learning/Resources/Images/LRLongTenure.png" width="430">
 
 - Department
   - Looking at a bar graph to show relationship between absent hours
@@ -90,7 +90,6 @@ Our data came from:
 [Kaggle Absenteeism Dataset](https://www.kaggle.com/datasets/HRAnalyticRepository/absenteeism-dataset "Kaggle Absenteeism Dataset")
 
 We found our inspiration for this dataset from this source:
-
 [HR Data Sets](https://www.aihr.com/blog/hr-data-sets-people-analytics/ "HR Data Sets")
 
 ## What are we looking for?
