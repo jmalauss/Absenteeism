@@ -1,5 +1,5 @@
 ## Absenteeism - Project Outline
-- Team
+- [Team](https://github.com/jmalauss/Absenteeism#team "Team")
 - Why Absenteeism?
 - Questions about Absenteeism
 - Factors
@@ -24,20 +24,28 @@ Our group gravitated towards this because we all wanted to focus on employment d
 
 ## Questions about Absenteeism
 - The question we would like to explore is whether age, gender, tenure, department, job title, or store locaation have any significant relationship with absent hours.
+
 ## Factors
 - Age
-  We did a linear regression model to see if there is a correlation with age and got this 
+  - We did a linear regression model to see if there is a correlation with age and got this 
 ![alt text](https://raw.githubusercontent.com/jmalauss/Absenteeism/machine_learning/Fig4.png)
+
 - Gender
+
 - Tenure
+
 - Department
-  Looking at a bar graph to show relationship between absent hours
+  - Looking at a bar graph to show relationship between absent hours
   ![alt text](https://raw.githubusercontent.com/jmalauss/Absenteeism/visualization/Average%20Absent%20Hours%20Per%20Department.png)
+
 - Job Title
-  This is a bar graph showing the relationship between job titles and absent hours
+  - This is a bar graph showing the relationship between job titles and absent hours
   ![alt text](https://raw.githubusercontent.com/jmalauss/Absenteeism/visualization/Average%20Absent%20Hours%20Per%20Job%20Title.png)
+
 - Store Location
+
 ## Data Source
+
 This data comes from https://www.kaggle.com/datasets/HRAnalyticRepository/absenteeism-dataset.  This is fictious data with hr information about absent hours.  Our current data source has 8335 rows and 13 columns. Within the 13 columns, there are Employee number, Surname, GivenName, Gender, City, JobTitle, DepartmentName, StoreLocation, Division, Age, LengthService, AbsentHours, and BusinessUnit.
 
 ## ERD - Entity Relationship Diagram
@@ -61,18 +69,19 @@ Absentism and data about people
 ## Data Visualization
 ## Lessons Learned
 ## Links
-- Presentation Link
-https://docs.google.com/presentation/d/1FpSnqludv_uRUOL-mWzRSvVawIkKticF0kY8_Bl397w/edit#slide=id.p
+- Presentation Link:
+
+[Google Slides Presentation](https://docs.google.com/presentation/d/1FpSnqludv_uRUOL-mWzRSvVawIkKticF0kY8_Bl397w/edit#slide=id.p "Google Slides Presentation")
 
 ## Why Absenteeism?
 
 
 ## Where did we get our data?
 Our data came from: 
-https://www.kaggle.com/datasets/HRAnalyticRepository/absenteeism-dataset
+[Kaggle Absenteeism Dataset](https://www.kaggle.com/datasets/HRAnalyticRepository/absenteeism-dataset "Kaggle Absenteeism Dataset)
 
 We found our inspiration for this dataset from this source:
-https://www.aihr.com/blog/hr-data-sets-people-analytics/
+[HR Data Sets](https://www.aihr.com/blog/hr-data-sets-people-analytics/ "HR Data Sets")
 
 
 
