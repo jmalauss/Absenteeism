@@ -105,6 +105,11 @@ We found our inspiration for this dataset from this source:
 
 This model was chosen to explore the relationship between a continuous input data column and a continuous target data column. The linear regression model would then attempt to fit itself to the data and predict the line of best fit for the data, therey illustrating the relationship between the two variables. This allows us to clearly illustrate the strength of the relationship, if any, between the variables. Unfortunately, the regression is limited to straight lines, and as such fails to capture more complex relationships between variables that could be found using a polynomial regression, for example.
 
+This data set had  8335 rows and 13 columns. First we dropped all the null values. Then we rounded the age, length_of_service, and absent_hours columns. Lastly we dropped surname, givename, and businessunit columns. 
+![alt text](https://raw.githubusercontent.com/jmalauss/Absenteeism/machine_learning/Changes%20to%20data%20file.png)
+
+#####The Linear Regression For Age and Absent Hours
+
 
 
 ## Group Approach
