@@ -27,7 +27,7 @@ Our group gravitated towards this because we all wanted to focus on employment d
 ## Factors
 - Age
   We did a linear regression model to see if there is a correlation with age and got this 
-https://raw.githubusercontent.com/samnougues/PyBer_Analysis/d6181c96844d1f05a818218b2a0d26e48c64baa2/PyBer_Analysis/Analysis/Fig2.png
+![alt text]https://raw.githubusercontent.com/samnougues/PyBer_Analysis/d6181c96844d1f05a818218b2a0d26e48c64baa2/PyBer_Analysis/Analysis/Fig2.png
 - Gender
 - Tenure
 - Department
