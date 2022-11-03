@@ -99,15 +99,7 @@ For our initial model, we attempted to create an unsupervised machine learning m
 
 ### Linear Regression: Tenure and Absences
 
-Prepros: general
-Feature selection/engineering:
-How TTS?:
-Why Model? Limits and Benefits:
-Explain why diff models:
-Explain current training, additional training:
-Accuracy Score/equivalent:
-
-This model was chosen to explore the relationship between a continuous input data column and a continuous target data column. The linear regression model would then attempt to fit itself to the data and predict the line of best fit for the data, therey illustrating the relationship between the two variables. This allows us to clearly illustrate the strength of the relationship, if any, between the variables. Unfortunately, the regression is limited to straight lines, and as such fails to capture more complex relationships between variables that could be found using a polynomial regression, for example.
+This linear model did not feature any extra preprocessing beyond the general data cleaning discussed earlier. In this model, we had denoted the tenure (or "LengthService") as the x-variable and "AbsentHours" as the y-variable. We had chosen linear regression to facilitate this analysis given both variables were continuous, and for the theoretical simplicity of a linear prediction. However, it quickly becomes apparent that this model has difficulty properly analyzing relationships that are not approximately lines, as would be expected for *linear* regression, nor does it fair well with data that is too varied. The X and Y variable werre then split into training and testing sets using the test_train_split function from the sklearn library. In our analysis, we had trained the model using the data as is and then the data after scaling it using StandardScaler (both resulting in a regression score of around 0.045%). From there, we had tried to find if there was a relationship amongst "Short-Term" employees (meaning a tenure of less than 10 years) and "long-Term" employees (meaning a tenure of at least 10 years). "Short-Term" employees had a regression score of around -660%, while "Long-Term" employees had a regression score of around -8.24%. Added all together, this means that there was no statistically significant linear relationship between tenure at this company and absent hours for employees.
 
 ### Linear Regression: Age and Absences
 
@@ -139,7 +131,15 @@ Accuracy Score/equivalent:
 
 
 ## Data Visualization
+
 ## Lessons Learned
+
+Future iterations of this analysis could seek the use of:
+
+- Polynomial regressions for more complicated datasets
+- Developing these models over a longer period of time to better work out kinks
+- Potentially finding and include more data of a similar nature to provide more material for the model to make predictions with
+
 ## Links
 
 - Presentation Link:
