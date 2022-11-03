@@ -82,6 +82,9 @@ Absentism and data about people
 - Presentation Link:
 [Google Slides Presentation](https://docs.google.com/presentation/d/1FpSnqludv_uRUOL-mWzRSvVawIkKticF0kY8_Bl397w/edit#slide=id.p "Google Slides Presentation")
 
+- Tableau Link:
+[Tableau Dashboard](https://public.tableau.com/views/Absenteeism_Final/AbsenteeismDash?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+
 ## Why Absenteeism?
 
 
