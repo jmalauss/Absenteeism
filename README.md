@@ -18,13 +18,13 @@
 - Justin
 - Samantha
 
-# Why Absenteeism?
+## Why Absenteeism?
 Our group gravitated towards this because we all wanted to focus on employment data. The idea of exploring relationships within data related to the workplace was relevant for all of us! Absenteeism seemed like a great place to begin because there are many factors that contribute to an individual's attendance at work.
 - What factors influence Absenteeism? 
 - What trends exist within attendance?
 
 ## Questions about Absenteeism
-- The question we would like to explore is whether age, gender, tenure, department, job title, or store locaation have any significant relationship with absent hours.
+- The question we would like to explore is whether age, gender, tenure, department, job title, or store location have any significant relationship with absent hours.
 
 ## Factors
 - Age
@@ -63,77 +63,67 @@ Below is an ERD depicting our tables and the relationships between them
 <img src="https://github.com/jmalauss/Absenteeism/blob/Database-files/Resources/Images/Absenteeism_ERD.png">
 
 ## Data Cleaning
+
+This data set had originally had 8335 rows and 13 columns before we began cleaning the data.
+![alt text](https://raw.githubusercontent.com/jmalauss/Absenteeism/machine_learning/Changes%20to%20data%20file.png)
+
+For the data cleaning, we used Jupyter Notebook and associated libraries to clean and reformat the data.
+After loading the CSV file, we had dropped rows with null values, then we had round down the "Age" column values to better reflect how people self-report their age.
+The "AbsentHours" and "LengthService" were rounded to two decimal places to make the data cleaner and keep the significant figures of these columns the same given that they're both units of time (though LengthService is presumed to be years and AbsentHours is presumed to be in Hours).
+Any unneeded columns were dropped from the dataframe; namely the "Surname", "GivenName", "City", and "BusinessUnit" columns.
+The "Gender" column was also encoded in this stage.
+
+Given the columns and the type of information we have about each employee, we decided to split our dataframe into two separate tables. The primary key relating these tables is the employee ID. We have one DF for People, and one for Location. People DF shares info about the individual's characteristics while Location DF shares info about WHERE they work. Both of these DFs contain the column AbsentHours, the variable we are looking to understand. We then also added in the Latitude and Longitude into our Location Dataframe for certain visualizations by joining our dataframe with a new dataframe from a different data source.
+
+Depending on the analysis and machine learning model, further cleaning was done.
+For example, in some models employees with a LengthService of 0 (meaning they just started) were dropped, or if an employee had no absent hours they may have been dropped.
+In some models, the EmployeeNumber was set as the Index to keep track of predictions or clusters.
+Other models also had binned job titles to allow for more accurate analyses.
+
 ## Database
 In our analysis there were multiple tables created to help us with visualizations:
+
 Absentism and data about people
  ![alt text](https://raw.githubusercontent.com/jmalauss/Absenteeism/visualization/people.png)
- Absentism and data about Location
+ 
+Absentism and data about Location
  ![alt text](https://raw.githubusercontent.com/jmalauss/Absenteeism/visualization/location%20table.png)
- Absentism and coordinates of cities
+ 
+Absentism and coordinates of cities
  ![alt text](https://raw.githubusercontent.com/jmalauss/Absenteeism/visualization/coordinates%20table.png)
 
  You can find all tables here: [Group Project Absenteeism.sql](https://github.com/jmalauss/Absenteeism/blob/Database-files/Group%20Project%20Absenteeism.sql "Group Project Absenteeism.sql")
 
 ## Machine Learning
-## Data Visualization
-## Lessons Learned
-## Links
 
-- Presentation Link:
-[Google Slides Presentation](https://docs.google.com/presentation/d/1FpSnqludv_uRUOL-mWzRSvVawIkKticF0kY8_Bl397w/edit#slide=id.p "Google Slides Presentation")
+### Initial Unsupervised Model
 
-## Why Absenteeism?
+For our initial model, we attempted to create an unsupervised machine learning model that would be able to predict and visualize the relationship between absent hours from work and other variables from our dataset. In our attempts to make this initial model work, we created dummy featurs for text variables to be used in K-means Clustering (with and without Principal Component Analysis) and scaled the data using StandardScaler, and then tried to normalize the data for use in dendrograms for Hierarchical Clustering. These initial attempts did not see the use of splitting the data into training and testing sets. The benefits of this model would have involved being able to quickly predict and visualize different relationships with ease, as well as allow our model to be used for other companies and locations. However, preprocessing the data for machine learning and creating the model can be very involved both in terms of time and coding proficieny. Our data was not immediately compatible with this type of machine learning, and as such would require far more massaging than would have been capable in our allotted time frame. The highest accuracy score was around 25%, which is what lead to our group's decision to create new models. To explain any potential relationships between factors in our dataset, we had decided to create smaller models that could be applied to different relationships so as to facilitate the analysis given the time frame. 
 
+### Linear Regression: Tenure and Absences
 
-## Where did we get our data?
-Our data came from: 
-[Kaggle Absenteeism Dataset](https://www.kaggle.com/datasets/HRAnalyticRepository/absenteeism-dataset "Kaggle Absenteeism Dataset")
+This linear model did not feature any extra preprocessing beyond the general data cleaning discussed earlier. In this model, we had denoted the tenure (or "LengthService") as the x-variable and "AbsentHours" as the y-variable. We had chosen linear regression to facilitate this analysis given both variables were continuous, and for the theoretical simplicity of a linear prediction. However, it quickly becomes apparent that this model has difficulty properly analyzing relationships that are not approximately lines, as would be expected for *linear* regression, nor does it fair well with data that is too varied. The X and Y variable werre then split into training and testing sets using the test_train_split function from the sklearn library. In our analysis, we had trained the model using the data as is and then the data after scaling it using StandardScaler (both resulting in a regression score of around 0.045%). From there, we had tried to find if there was a relationship amongst "Short-Term" employees (meaning a tenure of less than 10 years) and "long-Term" employees (meaning a tenure of at least 10 years). "Short-Term" employees had a regression score of around -660%, while "Long-Term" employees had a regression score of around -8.24%. Added all together, this means that there was no statistically significant linear relationship between tenure at this company and absent hours for employees.
 
-We found our inspiration for this dataset from this source:
-[HR Data Sets](https://www.aihr.com/blog/hr-data-sets-people-analytics/ "HR Data Sets")
+### Linear Regression: Age and Absences
 
-## What are we looking for?
-- Is there a difference in absent hours between males and females? - Justin
-- Is there a difference in absent hours based on age? - Samantha
-  - Using a linear regression we looked at the relationship between age and absent hours
-- Is there a difference in absent hours based on tenure? - Bradley
-- Is there a difference in absent hours based on job title? - Frederick
+Prepros: general
+Feature selection/engineering:
+How TTS?:
+Why Model? Limits and Benefits:
+Explain why diff models:
+Explain current training, additional training:
+Accuracy Score/equivalent:
 
-## Machine Learning Models
+### Unsupervised Model
 
-### Linear Regression
+Prepros: general
+Feature selection/engineering:
+How TTS?:
+Why Model? Limits and Benefits:
+Explain why diff models:
+Explain current training, additional training:
+Accuracy Score/equivalent:
 
-This model was chosen to explore the relationship between a continuous input data column and a continuous target data column. The linear regression model would then attempt to fit itself to the data and predict the line of best fit for the data, therey illustrating the relationship between the two variables. This allows us to clearly illustrate the strength of the relationship, if any, between the variables. Unfortunately, the regression is limited to straight lines, and as such fails to capture more complex relationships between variables that could be found using a polynomial regression, for example.
-
-This data set had  8335 rows and 13 columns. First we dropped all the null values. Then we rounded the age, length_of_service, and absent_hours columns. Lastly we dropped surname, givename, and businessunit columns. 
-![alt text](https://raw.githubusercontent.com/jmalauss/Absenteeism/machine_learning/Changes%20to%20data%20file.png)
-
-#####The Linear Regression For Age and Absent Hours
-
-
-
-## Group Approach
-1. clean the data through EDA with pandas
-2. cleaned data to pgadmin
-3. join/combine tables in pgadmin
-4. export back to notebook - what story do we want to tell?
-5. develop unsupervised/supervised ML model in the notebook
-6. develop visualizations - they can be in the notebook or JS/tableau
-
-## Branches:
-- ETL branch
-- database branch: pgadmin files; .sql files; module 7 for reference
-- machine learning model branch
-- visualization branch
-
-## Preliminary Data Preprocessing
-- After reading in the csv, we needed to round the Age column to a whole number
-- we also needed to drop some columns: `absenteeism_df.drop(["Surname", "GivenName", "BusinessUnit"], axis=1)`
-- Then we rounded LengthService and AbsentHours to 2 decimal places
-- Given the columns and the type of information we have about each employee, we decided to split our dataframe into two separate tables. The primary key relating these tables is the employee ID. We have one DF for People, and one for Location. People DF shares info about the individual's characteristics while Location DF shares info about WHERE they work. Both of these DFs contain the column AbsentHours, the variable we are looking to understand.
-
-
-## ML Models:
 - K-Means Clustering Algorithm used to find trends amongst the following factors:
     - Age
     - Gender
@@ -141,3 +131,25 @@ This data set had  8335 rows and 13 columns. First we dropped all the null value
     - AbsentHours (Worked hours missed)
 - As we added clusters and performed the elbow curve test, we noticed that reducing a dimension would be beneficial to the model and its use.
 - 2 Clusters were ideal for this analysis, but was also performed with 3 and visualized with a 2 and 3D scatter.
+
+
+## Data Visualization
+
+## Lessons Learned
+
+Future iterations of this analysis could seek the use of:
+
+- Polynomial regressions for more complicated datasets
+- Developing these models over a longer period of time to better work out kinks
+- Potentially finding and include more data of a similar nature to provide more material for the model to make predictions with
+
+## Links
+
+- Presentation Link:
+[Google Slides Presentation](https://docs.google.com/presentation/d/1FpSnqludv_uRUOL-mWzRSvVawIkKticF0kY8_Bl397w/edit#slide=id.p "Google Slides Presentation")
+
+- Kaggle Data Set:
+[Kaggle Absenteeism Dataset](https://www.kaggle.com/datasets/HRAnalyticRepository/absenteeism-dataset "Kaggle Absenteeism Dataset") 
+
+- Where We Found Our Dataset:
+[HR Data Sets](https://www.aihr.com/blog/hr-data-sets-people-analytics/ "HR Data Sets")
