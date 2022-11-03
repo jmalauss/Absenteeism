@@ -106,13 +106,8 @@ This linear model did not feature any extra preprocessing beyond the general dat
 
 ### Linear Regression: Age and Absences
 
-Prepros: general
-Feature selection/engineering:
-How TTS?:
-Why Model? Limits and Benefits:
-Explain why diff models:
-Explain current training, additional training:
-Accuracy Score/equivalent:
+We did not need to preprocess the data further than creating the people table, which was discussed in a prior section.  
+Feature selection/engineering: While looking at the data, we chose to make "Age" the x variable and "Absent Hours" the y variables because we wanted to know if age had any effect on absent hours. To split the data between training and testing, we used 20 percent of the data. We chose the linear regression method because age and absent hours are continuous. The limit to a linear model is that we are trying to make a vast number of instances fit into a narrow line which may be difficult. After we ran this model, we saw that the R-squared (R2)is  0.6922064772368998, which is fairly high. However, the mean squared error (MSE) is 707.9718410428652, which means the regression line is slightly off. To rectify this, we will have to remove some outliers. Afterward, I also did a regular regression line which was much more in tune with the data.
 
 ### Unsupervised Model
 
