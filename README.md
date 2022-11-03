@@ -70,6 +70,8 @@ The "AbsentHours" and "LengthService" were rounded to two decimal places to make
 Any unneeded columns were dropped from the dataframe; namely the "Surname", "GivenName", "City", and "BusinessUnit" columns.
 The "Gender" column was also encoded in this stage.
 
+Given the columns and the type of information we have about each employee, we decided to split our dataframe into two separate tables. The primary key relating these tables is the employee ID. We have one DF for People, and one for Location. People DF shares info about the individual's characteristics while Location DF shares info about WHERE they work. Both of these DFs contain the column AbsentHours, the variable we are looking to understand. We then also added in the Latitude and Longitude into our Location Dataframe for certain visualizations by joining our dataframe with a new dataframe from a different data source.
+
 Depending on the analysis and machine learning model, further cleaning was done.
 For example, in some models employees with a LengthService of 0 (meaning they just started) were dropped, or if an employee had no absent hours they may have been dropped.
 In some models, the EmployeeNumber was set as the Index to keep track of predictions or clusters.
@@ -90,6 +92,57 @@ Absentism and coordinates of cities
  You can find all tables here: [Group Project Absenteeism.sql](https://github.com/jmalauss/Absenteeism/blob/Database-files/Group%20Project%20Absenteeism.sql "Group Project Absenteeism.sql")
 
 ## Machine Learning
+
+### Initial Unsupervised Model
+
+For our initial model, we attempted to create an unsupervised machine learning model that would be able to predict and visualize the relationship between absent hours from work and other variables from our dataset. In our attempts to make this initial model work, we created dummy featurs for text variables to be used in K-means Clustering (with and without Principal Component Analysis) and scaled the data using StandardScaler, and then tried to normalize the data for use in dendrograms for Hierarchical Clustering. These initial attempts did not see the use of splitting the data into training and testing sets.
+
+Why Model? Limits and Benefits:
+Explain why diff models:
+Explain current training, additional training:
+Accuracy Score/equivalent:
+
+### Linear Regression: Tenure and Absences
+
+Prepros: general
+Feature selection/engineering:
+How TTS?:
+Why Model? Limits and Benefits:
+Explain why diff models:
+Explain current training, additional training:
+Accuracy Score/equivalent:
+
+This model was chosen to explore the relationship between a continuous input data column and a continuous target data column. The linear regression model would then attempt to fit itself to the data and predict the line of best fit for the data, therey illustrating the relationship between the two variables. This allows us to clearly illustrate the strength of the relationship, if any, between the variables. Unfortunately, the regression is limited to straight lines, and as such fails to capture more complex relationships between variables that could be found using a polynomial regression, for example.
+
+### Linear Regression: Age and Absences
+
+Prepros: general
+Feature selection/engineering:
+How TTS?:
+Why Model? Limits and Benefits:
+Explain why diff models:
+Explain current training, additional training:
+Accuracy Score/equivalent:
+
+### Unsupervised Model
+
+Prepros: general
+Feature selection/engineering:
+How TTS?:
+Why Model? Limits and Benefits:
+Explain why diff models:
+Explain current training, additional training:
+Accuracy Score/equivalent:
+
+- K-Means Clustering Algorithm used to find trends amongst the following factors:
+    - Age
+    - Gender
+    - LengthService (Tenure in Years)
+    - AbsentHours (Worked hours missed)
+- As we added clusters and performed the elbow curve test, we noticed that reducing a dimension would be beneficial to the model and its use.
+- 2 Clusters were ideal for this analysis, but was also performed with 3 and visualized with a 2 and 3D scatter.
+
+
 ## Data Visualization
 ## Lessons Learned
 ## Links
@@ -102,33 +155,3 @@ Absentism and coordinates of cities
 
 - Where We Found Our Dataset:
 [HR Data Sets](https://www.aihr.com/blog/hr-data-sets-people-analytics/ "HR Data Sets")
-
-----------
-
-## What are we looking for?
-- Is there a difference in absent hours between males and females? - Justin
-- Is there a difference in absent hours based on age? - Samantha
-  - Using a linear regression we looked at the relationship between age and absent hours
-- Is there a difference in absent hours based on tenure? - Bradley
-- Is there a difference in absent hours based on job title? - Frederick
-
-## Machine Learning Models
-
-### Linear Regression
-
-This model was chosen to explore the relationship between a continuous input data column and a continuous target data column. The linear regression model would then attempt to fit itself to the data and predict the line of best fit for the data, therey illustrating the relationship between the two variables. This allows us to clearly illustrate the strength of the relationship, if any, between the variables. Unfortunately, the regression is limited to straight lines, and as such fails to capture more complex relationships between variables that could be found using a polynomial regression, for example.
-
-
-## Preliminary Data Preprocessing
-- we also needed to drop some columns: `absenteeism_df.drop(["Surname", "GivenName", "BusinessUnit"], axis=1)`
-- Given the columns and the type of information we have about each employee, we decided to split our dataframe into two separate tables. The primary key relating these tables is the employee ID. We have one DF for People, and one for Location. People DF shares info about the individual's characteristics while Location DF shares info about WHERE they work. Both of these DFs contain the column AbsentHours, the variable we are looking to understand.
-
-
-## ML Models:
-- K-Means Clustering Algorithm used to find trends amongst the following factors:
-    - Age
-    - Gender
-    - LengthService (Tenure in Years)
-    - AbsentHours (Worked hours missed)
-- As we added clusters and performed the elbow curve test, we noticed that reducing a dimension would be beneficial to the model and its use.
-- 2 Clusters were ideal for this analysis, but was also performed with 3 and visualized with a 2 and 3D scatter.
