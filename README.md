@@ -24,7 +24,7 @@ Our group gravitated towards this because we all wanted to focus on employment d
 - What trends exist within attendance?
 
 ## Questions about Absenteeism
-- The question we would like to explore is whether age, gender, tenure, department, job title, or store locaation have any significant relationship with absent hours.
+- The question we would like to explore is whether age, gender, tenure, department, job title, or store location have any significant relationship with absent hours.
 
 ## Factors
 - Age
@@ -95,12 +95,7 @@ Absentism and coordinates of cities
 
 ### Initial Unsupervised Model
 
-For our initial model, we attempted to create an unsupervised machine learning model that would be able to predict and visualize the relationship between absent hours from work and other variables from our dataset. In our attempts to make this initial model work, we created dummy featurs for text variables to be used in K-means Clustering (with and without Principal Component Analysis) and scaled the data using StandardScaler, and then tried to normalize the data for use in dendrograms for Hierarchical Clustering. These initial attempts did not see the use of splitting the data into training and testing sets.
-
-Why Model? Limits and Benefits:
-Explain why diff models:
-Explain current training, additional training:
-Accuracy Score/equivalent:
+For our initial model, we attempted to create an unsupervised machine learning model that would be able to predict and visualize the relationship between absent hours from work and other variables from our dataset. In our attempts to make this initial model work, we created dummy featurs for text variables to be used in K-means Clustering (with and without Principal Component Analysis) and scaled the data using StandardScaler, and then tried to normalize the data for use in dendrograms for Hierarchical Clustering. These initial attempts did not see the use of splitting the data into training and testing sets. The benefits of this model would have involved being able to quickly predict and visualize different relationships with ease, as well as allow our model to be used for other companies and locations. However, preprocessing the data for machine learning and creating the model can be very involved both in terms of time and coding proficieny. Our data was not immediately compatible with this type of machine learning, and as such would require far more massaging than would have been capable in our allotted time frame. The highest accuracy score was around 25%, which is what lead to our group's decision to create new models. To explain any potential relationships between factors in our dataset, we had decided to create smaller models that could be applied to different relationships so as to facilitate the analysis given the time frame. 
 
 ### Linear Regression: Tenure and Absences
 
