@@ -64,6 +64,9 @@ Below is an ERD depicting our tables and the relationships between them
 
 ## Data Cleaning
 
+This data set had originally had 8335 rows and 13 columns before we began cleaning the data.
+![alt text](https://raw.githubusercontent.com/jmalauss/Absenteeism/machine_learning/Changes%20to%20data%20file.png)
+
 For the data cleaning, we used Jupyter Notebook and associated libraries to clean and reformat the data.
 After loading the CSV file, we had dropped rows with null values, then we had round down the "Age" column values to better reflect how people self-report their age.
 The "AbsentHours" and "LengthService" were rounded to two decimal places to make the data cleaner and keep the significant figures of these columns the same given that they're both units of time (though LengthService is presumed to be years and AbsentHours is presumed to be in Hours).
