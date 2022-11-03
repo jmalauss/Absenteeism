@@ -68,11 +68,12 @@ For the data cleaning, we used Jupyter Notebook and associated libraries to clea
 After loading the CSV file, we had dropped rows with null values, then we had round down the "Age" column values to better reflect how people self-report their age.
 The "AbsentHours" and "LengthService" were rounded to two decimal places to make the data cleaner and keep the significant figures of these columns the same given that they're both units of time (though LengthService is presumed to be years and AbsentHours is presumed to be in Hours).
 Any unneeded columns were dropped from the dataframe; namely the "Surname", "GivenName", "City", and "BusinessUnit" columns.
+The "Gender" column was also encoded in this stage.
 
 Depending on the analysis and machine learning model, further cleaning was done.
 For example, in some models employees with a LengthService of 0 (meaning they just started) were dropped, or if an employee had no absent hours they may have been dropped.
 In some models, the EmployeeNumber was set as the Index to keep track of predictions or clusters.
-Other models also had encoded the Gender column in the cleaning stage, and some had binned job titles to allow for more accurate analyses.
+Other models also had binned job titles to allow for more accurate analyses.
 
 ## Database
 In our analysis there were multiple tables created to help us with visualizations:
