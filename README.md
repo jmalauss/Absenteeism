@@ -156,3 +156,5 @@ Future iterations of this analysis could seek the use of:
 
 - Where We Found Our Dataset:
 [HR Data Sets](https://www.aihr.com/blog/hr-data-sets-people-analytics/ "HR Data Sets")
+
+- Presenation Outline:
