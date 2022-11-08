@@ -133,7 +133,7 @@ Accuracy Score/equivalent:
 Tableau Dashboard Link:
 [Tableau Dashboard Link](https://public.tableau.com/views/Absenteeism_Final/AbsenteeismDash?:language=en-US&:display_count=n&:origin=viz_share_link)
 
-[Map Picture]()
+[Map Picture](https://github.com/jmalauss/Absenteeism/blob/main/map.png)
 
 ## Lessons Learned
 
