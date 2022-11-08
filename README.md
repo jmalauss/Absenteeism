@@ -21,12 +21,12 @@
 - Samantha
 
 ## Why Absenteeism?
-Our group gravitated towards this because we all wanted to focus on employment data. The idea of exploring relationships within data related to the workplace was relevant for all of us! Absenteeism seemed like a great place to begin because there are many factors that contribute to an individual's attendance at work.
+Our group gravitated towards this topic because we all wanted to focus on employment data. The idea of exploring relationships within data related to the workplace was relevant for all of us! Absenteeism seemed like a great place to begin because there are many factors that contribute to an individual's attendance at work and could prove beneficial to find trends for.
 - What factors influence Absenteeism? 
 - What trends exist within attendance?
 
 ## Questions about Absenteeism
-- The question we would like to explore is whether age, gender, tenure, department, job title, or store location have any significant relationship with absent hours.
+The question we would like to explore is whether age, gender, tenure, department, job title, or store location have any significant relationship with absent hours.
 
 ## Factors
 - Age
