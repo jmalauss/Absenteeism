@@ -153,3 +153,6 @@ Future iterations of this analysis could seek the use of:
 
 - Where We Found Our Dataset:
 [HR Data Sets](https://www.aihr.com/blog/hr-data-sets-people-analytics/ "HR Data Sets")
+
+- Tableau Dashboard Link:
+[Tableau Dashboard Link](https://public.tableau.com/views/Absenteeism_Final/AbsenteeismDash?:language=en-US&:display_count=n&:origin=viz_share_link)
