@@ -137,9 +137,9 @@ Tableau Dashboard Link:
 
 The Tableau Dashboard allows users to see how absent hours vary based on store locations and age. Additionally, you can filter a graph that displays absent hours by gender, based on which state they work in if you are interested in gender differences:
 
-![Map Picture](https://github.com/jmalauss/Absenteeism/blob/main/map.png)
+![Map Picture](https://github.com/jmalauss/Absenteeism/blob/main/Resources/Images/map.png)
 
-![Gender&AbsentHours](https://github.com/jmalauss/Absenteeism/blob/main/gender.png)
+![Gender&AbsentHours](https://github.com/jmalauss/Absenteeism/blob/main/Resources/Images/gender.png)
 
 ## Lessons Learned
 
