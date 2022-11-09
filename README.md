@@ -33,7 +33,6 @@ The question we would like to explore is whether age, gender, tenure, department
   - We did a linear regression model to see if there is a correlation with age and got this 
 ![alt text](https://raw.githubusercontent.com/jmalauss/Absenteeism/machine_learning/Fig4.png)
 
-- Gender
 
 - Tenure
   - After performing a linear regression model on Employee Age versus Tenure (left model) and then again after scaling the data with StandardScaler.fit_transform() (right model), the following models were generated
@@ -51,8 +50,6 @@ The question we would like to explore is whether age, gender, tenure, department
 - Job Title
   - This is a bar graph showing the relationship between job titles and absent hours
   ![alt text](https://raw.githubusercontent.com/jmalauss/Absenteeism/visualization/Average%20Absent%20Hours%20Per%20Job%20Title.png)
-
-- Store Location
 
 ## Data Source
 
