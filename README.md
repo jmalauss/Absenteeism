@@ -18,7 +18,7 @@
 - Bradley
 - Frederick
 - Justin
-- 
+- Samantha Nougues
 
 ## Why Absenteeism?
 Our group gravitated towards this topic because we all wanted to focus on employment data. The idea of exploring relationships within data related to the workplace was relevant for all of us! Absenteeism seemed like a great place to begin because there are many factors that contribute to an individual's attendance at work and could prove beneficial to find trends for.
