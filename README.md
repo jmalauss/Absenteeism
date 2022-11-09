@@ -55,7 +55,7 @@ The question we would like to explore is whether age, gender, tenure, department
 
 This data comes from [this Kaggle dataset](https://www.kaggle.com/datasets/HRAnalyticRepository/absenteeism-dataset "Absenteeism").  This is fictious data with hr information about absent hours.  Our current data source has 8335 rows and 13 columns. Within the 13 columns, there are Employee number, Surname, GivenName, Gender, City, JobTitle, DepartmentName, StoreLocation, Division, Age, LengthService, AbsentHours, and BusinessUnit.
 
-## ERD - Entity Relationship Diagram
+## ERD - Entity Relationship 
 
 Below is an ERD depicting our tables and the relationships between them
 
